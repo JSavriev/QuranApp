@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorApp</item>
+        <item name="colorPrimaryDark">@color/colorBackground</item>
+        <item name="colorAccent">@color/colorApp</item>
+
+        <item name="colorControlHighlight">@color/colorAppRipple</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

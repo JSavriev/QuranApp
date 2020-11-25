@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:backgroundTint="@color/colorWhite"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:rippleColor="@color/colorAppRipple">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/textSuraNumber"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:textColor="@color/colorGrey"
+            android:textSize="24sp"
+            tools:text="23" />
+
+        <ImageView
+            android:id="@+id/imageRowIcon"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:scaleType="center"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="start"
+                android:scrollHorizontally="true"
+                android:textAppearance="@style/TitleText"
+                tools:text="Al-Baqara" />
+
+            <TextView
+                android:id="@+id/textMetadata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="start"
+                android:textColor="@color/colorApp"
+                android:textSize="14sp"
+                tools:text="Makki - 286 Verses" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textPageNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorApp"
+            android:textSize="14sp"
+            tools:text="1" />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

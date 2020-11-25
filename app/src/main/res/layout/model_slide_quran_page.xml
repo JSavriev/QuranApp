@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutQuranPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPage">
+
+    <ImageView
+        android:id="@+id/imageQuranPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp" />
+
+    <View
+        android:id="@+id/viewLeft1"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorGrey"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/viewRight"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/viewLeft"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/viewRightShadow"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bg_shadow_right"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/viewLeftShadow"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bg_shadow_left"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/textSuraTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorGrey"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textJuzTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorGrey"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textPageNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorGrey"
+        android:textSize="11sp" />
+
+</RelativeLayout>

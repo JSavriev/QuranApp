@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorApp">#7986cb</color>
+    <color name="colorAppRipple">#4D7A88CC</color>
+    <color name="colorWhite">#282828</color>
+    <color name="colorBlack">#bbbbbb</color>
+    <color name="colorBackground">#1b1b1b</color>
+    <color name="colorTransparent">#00EEEEEE</color>
+    <color name="colorGrey">#707070</color>
+    <color name="colorPage">#282828</color>
+    <color name="colorPageTransparent">#CC292929</color>
+    <color name="colorShadow">#1a1a1a</color>
+</resources>
+
