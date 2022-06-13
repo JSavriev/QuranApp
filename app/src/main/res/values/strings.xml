@@ -4,15 +4,18 @@
     <string name="bookmarks">Ҳатчўп</string>
     <string name="day_night">Тунги режим</string>
     <string name="day_night_desc">Тунги ва тонги режимлардан фойдаланиш</string>
+    <string name="deleted">ўчирилди</string>
     <string name="dua_motto">"Дуоларда бизни ҳам эслаб туринг, Яхшилар!"</string>
+    <string name="error">Хатолик!</string>
+    <string name="image_content">Image</string>
     <string name="info">Маълумот</string>
     <string name="juz2_description">Жуз\' %1$s</string>
+    <string name="last_page">Сўнгги саҳифа</string>
     <string name="list_sura">Сура</string>
     <string name="madani">Мадина</string>
+    <string name="mail">E-mail</string>
     <string name="makki">Макка</string>
-    <string name="my_email">jsavriev1999@gmail.com</string>
-    <string name="my_facebook">facebook.com/sjavokhir</string>
-    <string name="my_telegram">t.me/sjavokhir</string>
+    <string name="page_bookmarks">Саҳифа хатчўплари</string>
     <string name="page_description">%1$s - бет, Жуз\' %2$s</string>
     <string name="quran_ayah">%1$d - оят</string>
     <string name="quran_juz2">Жуз\'</string>
@@ -21,9 +24,11 @@
     <string name="rate_us">Дастурни баҳолаш</string>
     <string name="search">Излаш</string>
     <string name="settings">Созламалар</string>
+    <string name="share">Улашиш</string>
     <string name="show_page_info">Саҳифа маълумотларини кўрсатиш</string>
     <string name="show_page_info_desc">Ўқиш пайтида саҳифанинг рақами, суранинг номи ва жуз\' нинг рақами</string>
     <string name="sura_ayah_notification_str">Сура %1$s, %2$d - оят</string>
+    <string name="telegram">Telegram</string>
     <string name="to_contact_developer">Дастурчи билан боғланиш, фикр ва таклифлар учун</string>
     <plurals name="verses">
         <item quantity="one">1 оят</item>
@@ -31,9 +36,4 @@
     </plurals>
     <string name="volume_key">Овоз баландлиги тугмачаси навигацияси</string>
     <string name="volume_key_desc">Овоз баландлиги тугмачалари ёрдамида саҳифалар ўртасида навигация</string>
-    <string name="error">Хатолик!</string>
-    <string name="share">Улашиш</string>
-    <string name="last_page">Сўнгги саҳифа</string>
-    <string name="page_bookmarks">Саҳифа хатчўплари</string>
-    <string name="deleted">ўчирилди</string>
 </resources>

@@ -34,8 +34,7 @@
             android:fontFamily="sans-serif-condensed"
             android:textColor="@color/colorGrey"
             android:textSize="16sp"
-            tools:text="1" />
-
+            tools:text="1"
+            tools:ignore="RelativeOverlap" />
     </RelativeLayout>
-
 </com.google.android.material.card.MaterialCardView>

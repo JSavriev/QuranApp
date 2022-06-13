@@ -26,9 +26,7 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void bindingViews() {
-        findViewById(R.id.buttonBack).setOnClickListener(v -> {
-            super.onBackPressed();
-        });
+        findViewById(R.id.buttonBack).setOnClickListener(v -> super.onBackPressed());
     }
 
     private void setDayNight() {

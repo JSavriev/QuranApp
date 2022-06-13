@@ -19,9 +19,9 @@ import sj.quran.app.widget.JuzView;
 
 public class QuranListAdapter extends RecyclerView.Adapter<QuranListAdapter.HeaderHolder> {
 
-    private Context context;
-    private LayoutInflater inflater;
-    private QuranRow[] elements;
+    private final Context context;
+    private final LayoutInflater inflater;
+    private final QuranRow[] elements;
     private QuranTouchListener touchListener;
 
     public QuranListAdapter(Context context, QuranRow[] elements) {
@@ -115,14 +115,14 @@ public class QuranListAdapter extends RecyclerView.Adapter<QuranListAdapter.Head
 
     class HeaderHolder extends RecyclerView.ViewHolder {
 
-        private TextView textTitle;
-        private TextView textPageNumber;
+        private final TextView textTitle;
+        private final TextView textPageNumber;
 
         public HeaderHolder(View itemView) {
             super(itemView);
 
-            textTitle = (TextView) itemView.findViewById(R.id.textTitle);
-            textPageNumber = (TextView) itemView.findViewById(R.id.textPageNumber);
+            textTitle = itemView.findViewById(R.id.textTitle);
+            textPageNumber = itemView.findViewById(R.id.textPageNumber);
 
             itemView.setOnClickListener(v -> {
                 QuranRow element = elements[getAdapterPosition()];
@@ -133,16 +133,16 @@ public class QuranListAdapter extends RecyclerView.Adapter<QuranListAdapter.Head
 
     class ViewHolder extends HeaderHolder {
 
-        private TextView textSuraNumber;
-        private TextView textMetadata;
-        private ImageView imageRowIcon;
+        private final TextView textSuraNumber;
+        private final TextView textMetadata;
+        private final ImageView imageRowIcon;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
-            textMetadata = (TextView) itemView.findViewById(R.id.textMetadata);
-            textSuraNumber = (TextView) itemView.findViewById(R.id.textSuraNumber);
-            imageRowIcon = (ImageView) itemView.findViewById(R.id.imageRowIcon);
+            textMetadata = itemView.findViewById(R.id.textMetadata);
+            textSuraNumber = itemView.findViewById(R.id.textSuraNumber);
+            imageRowIcon = itemView.findViewById(R.id.imageRowIcon);
         }
     }
 

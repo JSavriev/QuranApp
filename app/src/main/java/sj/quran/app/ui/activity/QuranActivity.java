@@ -84,6 +84,7 @@ public class QuranActivity extends AppCompatActivity implements View.OnClickList
         handler.removeCallbacksAndMessages(null);
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

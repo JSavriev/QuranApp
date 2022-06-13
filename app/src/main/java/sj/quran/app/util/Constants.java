@@ -9,9 +9,8 @@ public class Constants {
     public static final String VOLUME_KEY = "volume_key";
 
     // Url
-    public static final String FACEBOOK = "http://www.facebook.com/sjavokhir";
-    public static final String TELEGRAM = "http://www.t.me/sjavokhir";
-    public static final String GMAIL = "jsavriev1999@gmail.com";
+    public static final String TELEGRAM = "https://t.me/MuslimSupportBot";
+    public static final String GMAIL = "javokhirdev@gmail.com";
     public static final String PLAY_MARKET_URL = "https://play.google.com/store/apps/details?id=sj.quran.app";
 
     // Database

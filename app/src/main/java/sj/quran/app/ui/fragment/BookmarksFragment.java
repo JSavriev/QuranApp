@@ -19,7 +19,6 @@ import com.google.android.material.card.MaterialCardView;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 import sj.quran.app.R;
 import sj.quran.app.db.DBHelper;
@@ -106,9 +105,9 @@ public class BookmarksFragment extends Fragment {
                 ArrayList<BookmarkModel> pageBookmarks = DBHelper.get().getBookmarkPages();
 
                 int page = pageBookmarks.get(viewHolder.getAdapterPosition()).getPage();
-                String toastText = QuranInfo.getSuraNameString(Objects.requireNonNull(getContext()), page)
+                String toastText = QuranInfo.getSuraNameString(requireContext(), page)
                         .concat(", ")
-                        .concat(QuranInfo.getPageSubtitle(getContext(), page))
+                        .concat(QuranInfo.getPageSubtitle(requireContext(), page))
                         .concat(" ")
                         .concat(getString(R.string.deleted));
 
@@ -116,7 +115,7 @@ public class BookmarksFragment extends Fragment {
                 pageBookmarks.remove(viewHolder.getAdapterPosition());
 
                 setPageBookmarksData(pageBookmarks);
-                Utils.toast(getContext(), toastText);
+                Utils.toast(requireContext(), toastText);
             }
         };
 
@@ -142,8 +141,8 @@ public class BookmarksFragment extends Fragment {
     private void setLastPageData() {
         int lastPage = QuranSettings.get(getContext()).getLastPage();
         if (lastPage != Constants.NO_PAGE_SAVED) {
-            textTitle.setText(QuranInfo.getSuraNameString(Objects.requireNonNull(getContext()), lastPage));
-            textMetadata.setText(QuranInfo.getPageSubtitle(Objects.requireNonNull(getContext()), lastPage));
+            textTitle.setText(QuranInfo.getSuraNameString(requireContext(), lastPage));
+            textMetadata.setText(QuranInfo.getPageSubtitle(requireContext(), lastPage));
             textPageNumber.setText(String.valueOf(lastPage));
 
             layoutLastPage.setVisibility(View.VISIBLE);

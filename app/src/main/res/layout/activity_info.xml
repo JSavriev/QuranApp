@@ -24,8 +24,9 @@
                 android:layout_height="?attr/actionBarSize"
                 android:layout_centerVertical="true"
                 android:background="?selectableItemBackgroundBorderless"
+                android:contentDescription="@string/image_content"
                 android:src="@drawable/ic_back"
-                android:tint="@color/colorBlack" />
+                app:tint="@color/colorBlack" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -40,7 +41,6 @@
                 android:text="@string/info"
                 android:textColor="@color/colorBlack"
                 android:textSize="22sp" />
-
         </RelativeLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -87,8 +87,9 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_centerVertical="true"
+                        android:contentDescription="@string/image_content"
                         android:src="@drawable/ic_rate_us"
-                        android:tint="@color/colorApp" />
+                        app:tint="@color/colorApp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -100,9 +101,7 @@
                         android:text="@string/rate_us"
                         android:textColor="@color/colorBlack"
                         android:textSize="18sp" />
-
                 </RelativeLayout>
-
             </com.google.android.material.card.MaterialCardView>
 
             <TextView
@@ -117,52 +116,11 @@
                 android:textSize="20sp" />
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cardFacebook"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:backgroundTint="@color/colorWhite"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="0dp"
-                app:rippleColor="@color/colorAppRipple"
-                app:strokeColor="@color/colorAppRipple"
-                app:strokeWidth="0.5dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:id="@+id/imageFacebook"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/ic_facebook" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="16dp"
-                        android:layout_toEndOf="@+id/imageFacebook"
-                        android:fontFamily="sans-serif-condensed"
-                        android:text="@string/my_facebook"
-                        android:textColor="@color/colorBlack"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardTelegram"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginTop="16dp"
                 android:backgroundTint="@color/colorWhite"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="0dp"
@@ -180,6 +138,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_centerVertical="true"
+                        android:contentDescription="@string/image_content"
                         android:src="@drawable/ic_telegram" />
 
                     <TextView
@@ -189,12 +148,10 @@
                         android:layout_marginStart="16dp"
                         android:layout_toEndOf="@+id/imageTelegram"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="@string/my_telegram"
+                        android:text="@string/telegram"
                         android:textColor="@color/colorBlack"
                         android:textSize="18sp" />
-
                 </RelativeLayout>
-
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
@@ -219,6 +176,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_centerVertical="true"
+                        android:contentDescription="@string/image_content"
                         android:src="@drawable/ic_gmail" />
 
                     <TextView
@@ -228,12 +186,10 @@
                         android:layout_marginStart="16dp"
                         android:layout_toEndOf="@+id/imageGmail"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="@string/my_email"
+                        android:text="@string/mail"
                         android:textColor="@color/colorBlack"
                         android:textSize="18sp" />
-
                 </RelativeLayout>
-
             </com.google.android.material.card.MaterialCardView>
 
             <TextView
@@ -245,9 +201,7 @@
                 android:text="@string/dua_motto"
                 android:textColor="@color/colorBlack"
                 android:textSize="18sp" />
-
         </LinearLayout>
-
     </androidx.core.widget.NestedScrollView>
 
     <View
@@ -257,5 +211,4 @@
         android:layout_below="@id/appBarLayout"
         android:background="@drawable/bg_shadow_bottom"
         android:visibility="gone" />
-
 </RelativeLayout>

@@ -24,8 +24,9 @@
                 android:layout_height="?attr/actionBarSize"
                 android:layout_centerVertical="true"
                 android:background="?selectableItemBackgroundBorderless"
+                android:contentDescription="@string/image_content"
                 android:src="@drawable/ic_back"
-                android:tint="@color/colorBlack" />
+                app:tint="@color/colorBlack" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -40,7 +41,6 @@
                 android:text="@string/settings"
                 android:textColor="@color/colorBlack"
                 android:textSize="22sp" />
-
         </RelativeLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -109,9 +109,7 @@
                         android:checked="false"
                         android:clickable="false"
                         android:drawableStart="@drawable/ic_checkbox" />
-
                 </RelativeLayout>
-
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
@@ -184,9 +182,7 @@
                                 android:checked="false"
                                 android:clickable="false"
                                 android:drawableStart="@drawable/ic_checkbox" />
-
                         </RelativeLayout>
-
                     </com.google.android.material.card.MaterialCardView>
 
                     <View
@@ -246,17 +242,11 @@
                                 android:checked="false"
                                 android:clickable="false"
                                 android:drawableStart="@drawable/ic_checkbox" />
-
                         </RelativeLayout>
-
                     </com.google.android.material.card.MaterialCardView>
-
                 </LinearLayout>
-
             </com.google.android.material.card.MaterialCardView>
-
         </LinearLayout>
-
     </androidx.core.widget.NestedScrollView>
 
     <View
@@ -266,5 +256,4 @@
         android:layout_below="@id/appBarLayout"
         android:background="@drawable/bg_shadow_bottom"
         android:visibility="gone" />
-
 </RelativeLayout>

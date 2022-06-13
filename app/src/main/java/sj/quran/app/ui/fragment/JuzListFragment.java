@@ -28,7 +28,7 @@ import static sj.quran.app.util.Constants.JUZ2_COUNT;
 
 public class JuzListFragment extends Fragment {
 
-    private static int[] entryTypes = {
+    private static final int[] entryTypes = {
             JuzView.TYPE_JUZ, JuzView.TYPE_QUARTER,
             JuzView.TYPE_HALF, JuzView.TYPE_THREE_QUARTERS};
 
@@ -41,7 +41,7 @@ public class JuzListFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setItemAnimator(new DefaultItemAnimator());

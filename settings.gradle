@@ -1,2 +1,2 @@
-include ':app'
-rootProject.name = "QuranApp"
+rootProject.name = "quran-uz"
+include ":app"

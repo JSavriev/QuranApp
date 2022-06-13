@@ -1,11 +1,12 @@
 package sj.quran.app.ui.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.widget.NestedScrollView;
-
+import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.widget.NestedScrollView;
 
 import sj.quran.app.R;
 import sj.quran.app.util.Constants;
@@ -21,14 +22,12 @@ public class InfoActivity extends AppCompatActivity implements View.OnClickListe
         setNestedScrollView();
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.buttonBack:
                 super.onBackPressed();
-                break;
-            case R.id.cardFacebook:
-                Utils.shareLink(this, Constants.FACEBOOK);
                 break;
             case R.id.cardTelegram:
                 Utils.shareLink(this, Constants.TELEGRAM);
@@ -45,7 +44,6 @@ public class InfoActivity extends AppCompatActivity implements View.OnClickListe
     private void bindingViews() {
         findViewById(R.id.buttonBack).setOnClickListener(this);
         findViewById(R.id.cardRateUs).setOnClickListener(this);
-        findViewById(R.id.cardFacebook).setOnClickListener(this);
         findViewById(R.id.cardGmail).setOnClickListener(this);
         findViewById(R.id.cardTelegram).setOnClickListener(this);
     }

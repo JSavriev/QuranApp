@@ -10,7 +10,7 @@ import sj.quran.app.db.model.BookmarkModel;
 
 public class DBHelper {
 
-    private Realm realm = Realm.getDefaultInstance();
+    private final Realm realm = Realm.getDefaultInstance();
 
     public static DBHelper get() {
         return new DBHelper();
